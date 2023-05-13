@@ -18,5 +18,22 @@ namespace BasicCSharpProgramsDemo281Batch_
             }
             Console.WriteLine(reverse);
         }
+
+        public static void ReverseEachWordInSamePosition(string word)
+        {
+            string  sentance = "";
+            string[] words = word.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+                
+            {
+                string reverse = "";
+                foreach (char letter in words[i]) 
+                {
+                    reverse = letter + reverse;
+                }
+                sentance = sentance + reverse+" " ;
+            }
+            Console.WriteLine(sentance);
+        }
     }
 }
